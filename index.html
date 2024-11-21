@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Responsive Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="My first Calculator">
+        <meta name="author" content="Mostafa Khalil">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheet/style.css">
+    </head>
+    <body>
+        <form class="row g-3 calculator-form border border-dark">
+            <div class="col-12 col-sm-4">
+                <input type="text" class="form-control" id="x" placeholder="Put A Number">
+            </div>
+            <div class="col-6 col-sm-2">
+                <button type="button" onclick="Add()" class="btn btn-success w-100">+</button>
+            </div>
+            <div class="col-6 col-sm-2">
+                <button type="button" onclick="Sub()" class="btn btn-dark w-100">-</button>
+            </div>
+            <div class="col-6 col-sm-2">
+                <button type="button" onclick="Mul()" class="btn btn-warning w-100">*</button>
+            </div>
+            <div class="col-6 col-sm-2">
+                <button type="button" onclick="Divi()" class="btn btn-danger w-100">/</button>
+            </div>
+            <div class="col-12 col-sm-4">
+                <input type="text" class="form-control" id="y" placeholder="Put A Number">
+            </div>
+            <div class="col-12 col-sm-4">
+                <button type="button" id="result" onclick="Result()" class="btn btn-primary w-100">=</button>
+            </div>
+            <div class="col-12 col-sm-4">
+                <input type="text" class="form-control" id="z" placeholder="The Result" readonly>
+            </div>
+        </form>
+        <script src="Js/custom.js"></script>
+    </body>
+</html>
